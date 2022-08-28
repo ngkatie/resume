@@ -1,0 +1,236 @@
+%-------------------------
+% Katie Ng - Resume
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=1.4cm, top=1.5cm, right=1.4cm, bottom=1.5cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{1mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-0.5mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{1mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#2}}\vspace{-0.5mm}\\
+    \end{tabular*}
+    \vspace{-6.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1.2mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex,noitemsep,labelsep=0mm,itemsep=.2mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-0.8mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{Katie Ng}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}{ngkatie16@gmail.com | (718) 688-9177}
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeExp
+{Stevens Institute of Technology} 
+{Bachelor of Science in Computer Science, Minor in Quantitative Finance (GPA: 3.53/4.00)}
+{Hoboken, NJ}
+{Aug 2021 - May 2025}
+\resumeItemListStart
+\item[\tiny$\bullet$] Relevant Coursework: Data Structures and Algorithms, Discrete Structures, Probability and Statistics
+\item[\tiny$\bullet$] Activities: Pinnacle Research, Women in Computer Science, Society of Women Engineers (SWE), Alpha Phi
+\item[\tiny$\bullet$] Honors: Dean's List, Pinnacle Scholar, Presidential Scholar, Edwin A. Stevens Scholar, Martha Bayard Scholar
+\resumeItemListEnd
+
+\resumeExp
+{Stuyvesant High School} 
+{Specialized High School Regents Diploma with Advanced Designation (GPA: 94/100)}
+{New York, NY}
+{Sep 2017 - Jun 2021}
+
+\resumeSubHeadingListEnd
+
+%----------TECHNICAL SKILLS----------------
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-2.1mm}{\textbf{Languages:} Python, C++, Java, Racket, NetLogo, Arduino} & {\textbf{Web Technologies:} HTML, CSS, JavaScript} \\  
+\hspace{-3.1mm}{\textbf{ ML/AI:} Pandas} & {\textbf{Miscellaneous:} Git, Latex, Visual Studio Code}
+\end{tabular*}}
+\vspace{-4mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExp
+{Mobile AI Cybersecurity Computing (MACC) Laboratory}
+{Undergraduate Researcher}
+{Hoboken, NJ}
+{May 2022 - Present}
+\vspace{1mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Investigated the effect of resource selection window length on the reliability of cellular vehicle-to-everything.
+\item[\tiny$\bullet$] Evaluated the feasibility of autonomous resource selection in high-density traffic. Validated its advantage over dedicated short-range communications in regard to latency and Packet Reception Ratio.
+\item[\tiny$\bullet$] Developed simulations in Eclipse SUMO, manipulated object behavior through the Traffic Control Interface (TraCI) in Python, and applied vehicular communications in ns-3. Visualized data with pandas.
+\resumeItemListEnd
+
+\resumeExp
+{The Stuyvesant Indicator}
+{Editor-in-Chief}
+{New York, NY}
+{Nov 2019 - June 2021}
+\vspace{1mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Constructed project timelines and monitored workflow for 8 departments of 240 staff members.
+\item[\tiny$\bullet$] Edited all journalistic elements and graphic design in Adobe InDesign for 320-page publication.
+\item[\tiny$\bullet$] Led business campaigns to fundraise \$14,500. Allocated budget for production costs.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Digital Home Assistant}
+{Aug 2022}
+\vspace{0mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Built a home assistant powered by Raspberry Pi to display upcoming calendar events and real-time news.
+\item[\tiny$\bullet$] Integrated Canvas and Amazon Alexa modules to display course assignments and to enable voice control.
+\item[\tiny$\bullet$] Styled user interface with CSS to color-code events and deadlines by category.
+\resumeItemListEnd
+
+\resumeProject
+{Music Recommendation System}
+{Apr 2022}
+\vspace{0mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Streamlined workflow for a team of 3 to develop a Python script that suggest new music artists based on users' previously liked artists.
+\item[\tiny$\bullet$] Outlined sprint goals based on deadline and delegated tasks amongst team members.
+\item[\tiny$\bullet$] Implemented modular programming to optimize collaborative code. Wrote 6 test cases to ensure code quality.
+\resumeItemListEnd
+
+\resumeProject
+{University Management Interface}
+{Dec 2021}
+\vspace{0mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Developed a C++ program allowing users to access, add, and edit student and faculty profiles.
+\item[\tiny$\bullet$] Applied an authentication feature to restrict editing permissions depending on the user's role.
+\item[\tiny$\bullet$] Parsed text document to store saved profiles in a vector. Updated document as profiles were added or changed.
+\resumeItemListEnd
+
+\resumeProject
+{Weather Monitoring Station}
+{Dec 2021}
+\vspace{0mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Directed a team of 3 through a product development process to design and assemble a self-contained circuit (using a WeMos board, DHT sensor, and photocell) that monitors temperature, humidity, and light intensity.
+\item[\tiny$\bullet$] Implemented automatic low power mode and data validation in Arduino to optimize battery life and to minimize measurement errors. Uploaded readings through a publisher-subscriber model using MQTT protocols in IoT.
+\item[\tiny$\bullet$] Designed several hardware prototypes in SolidWorks and assessed their readiness for production based on metrics such as serviceability, print time, functionality, and consumer safety.
+\resumeItemListEnd
+
+\resumeProject
+{HIV Transmission and Prevention Model}
+{Jan 2019}
+\vspace{0mm}
+\resumeItemListStart
+\item[\tiny$\bullet$] Programmed a NetLogo simulation allowing users to observe dependencies between consistent prevention practices, HIV infections, and the onset of AIDS.
+\item[\tiny$\bullet$] Researched transmission rates, risk factors, and infection timelines to provide an accurate real-world model.
+\item[\tiny$\bullet$] Maintained thorough documentation of project versions as bugs were fixed and new features were implemented.
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
